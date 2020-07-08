@@ -1,0 +1,64 @@
+# GIT FILE HANDLING
+
+## EXAMPLE OF USING
+
+#*              text=auto
+#*.txt          text
+#*.bat          text eol=crlf
+#*.sh           text eol=lf
+#*.jpg          -text
+
+## DEFAULTS
+*               text=auto
+
+## DATA
+*.dat           -text
+
+## SOURCE CODE
+*.htm           text diff=html
+*.html          text diff=html
+*.inc           text diff=php
+*.php           text diff=php
+*.py            text diff=python
+*.rb            text diff=ruby
+*.sh            text eol=lf
+*.bat          text eol=crlf
+*.cmd          text eol=crlf
+*.xhtml         text diff=html
+## CONFIGS
+*.mo            binary
+
+## GRAPHICS
+*.gif       binary
+*.ico       binary
+*.jpg       binary
+*.png       binary
+*.psd       binary
+
+## AUDIO
+*.wav       binary
+
+## VIDEO
+*.swf       binary
+
+## ARCHIVES
+*.7z        binary
+*.gz        binary
+*.jar       binary
+*.rar       binary
+*.tar       binary
+*.zip       binary
+*.z         binary
+*.pack      binary
+
+## FONTS
+*.ttf       binary
+*.eot       binary
+*.otf       binary
+*.woff      binary
+*.woff2     binary
+
+## OTHER
+*.cur       binary
+*.icc       binary
+*.crt       binary
