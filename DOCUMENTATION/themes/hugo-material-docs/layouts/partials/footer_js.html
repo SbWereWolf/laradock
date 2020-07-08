@@ -45,7 +45,12 @@
             a.setAttribute("class", "headerlink");
             a.setAttribute("href", "#" + headers[i].id);
             a.setAttribute("title", "Permanent link")
-            a.innerHTML = {{ or .Site.Params.permalink "¶" }};
+            a.innerHTML = {
+            {
+                or.Site.Params.permalink
+                "¶"
+            }
+        }
             headers[i].appendChild(a);
         }
       }
